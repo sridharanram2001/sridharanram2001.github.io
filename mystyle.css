@@ -1,0 +1,118 @@
+.heading
+{
+	color:Green;
+	text-align:center ;
+}
+
+.Welcome
+{
+	font-size:50px ;
+}
+
+.navigation_tab
+{
+
+	display:inline-block;
+	margin-left: auto;
+}
+.Resume
+{
+	
+}
+
+.Home
+{	
+	display:inline-block;
+	margin-left:30px
+}
+
+.Projects
+{
+	display:inline-block;
+}
+.Linkedin_logo	
+{	
+	display: inline;
+	margin-left:415px ;
+	width:50;
+	height:50;
+}
+
+.Github_logo
+{	
+	display: inline;
+	margin-left:20px ;
+	width:100;
+	height:50;	
+}
+
+.Youtube_logo
+{	
+	display: inline;
+	margin-right:20px ;
+	width:150;	
+	height:100;	
+}
+
+.background_img
+{
+
+	background-image:url('src/Robot_img.jpg'),  linear-gradient(rgba(255,255,255,0.75),rgba(0,0,0,0.75));
+    background-blend-mode: overlay;
+
+}
+
+.background_img_projects
+{
+
+	background-image:url('src/Robotic-Automation.jpg'),  linear-gradient(rgba(255,255,255,0.75),rgba(0,0,0,0.75));
+    background-blend-mode: overlay;
+
+}
+
+.outer_div
+{
+
+	background-color: rgba(25, 135, 84,0.8);
+	width:1000px;
+	margin-left:250px;
+	border-radius: 1rem;
+}
+
+.my_image
+{	
+	margin-left: 350px;
+	width:202.625px;
+	height:165.5px;
+	border-radius:1000px;
+}
+
+.Nav_bar
+{
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.Hover-button > .text-black:hover
+{
+background-color: rgba(255, 255, 255, 1.0);
+}
+
+.Projects-div
+{
+	background-color: rgba(25, 135, 84,1);
+	width:1000px;
+	margin-left:250px;
+	border-radius: 1rem;
+}
+
+.self_balacing_image_outside
+{
+	margin-left:350px;
+	width:202.625px;
+	height:165.5px;
+}
+
+.self_balance_background
+{
+
+}
