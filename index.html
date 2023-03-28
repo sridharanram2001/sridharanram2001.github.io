@@ -17,9 +17,9 @@ My website
     <a class="nav-link active btn text-black Home" data-bs-toggle="tab" href="#home">HOME</a>
     <a class="nav-link btn text-black Resume" data-bs-toggle="tab" href="#resume">RESUME</a>
     <a class="nav-link btn text-black Projects" data-bs-toggle="tab" href="#projects">PROJECTS</a>
-    
+    <a class="nav-link btn text-black Notebooks" data-bs-toggle="tab" href="#notebooks">NOTEBOOKS</a>
     <button type="button" class="btn text-black">MILESTONES</button>
-    <button type="button" class="btn text-black">NOTEBOOKS</button>
+    
   </div>
 
 <a href="https://www.linkedin.com/in/ramprakash-sridharan/"><img src="src/Linkedin_img.png" alt="Linkedin_logo" class="Linkedin_logo"></a>
@@ -45,26 +45,66 @@ My website
 </object>
 </div>
 
-<div class="tab-pane container fade Projects-div" id="projects">
-<div class="mt-4 p-5 text-white rounded self_balancing_div">
-<h3 class="self_balance_heading">Self Balancing Motorcycle</h3>
-<a href="Self_Balancing_Motorcycle.html"><img src="src/self_balancing_motorcycle1.jpg" class="rounded-cirle self_balancing_image_outside" alt="Cinque Terre"></a>
+<div class="tab-pane container fade Projects-div" id="projects"> 
+<div class="container-fluid">
+<div class="row">
+<div class="card bg-primary col-md-3" style="margin:20px">
+    <div class="card-body text-center">
+      <p class="card-text">Self Balancing Motorcycle</p>
+    </div>
+     <img class="card-img-bottom" src="src/self_balancing_motorcycle1.jpg" alt="Card image" style="width:100%">
+  </div>
+
+<div class="card bg-warning col-md-3" style="margin:20px">
+    <div class="card-body text-center">
+      <p class="card-text">Webcam Controlled Rover</p>
+    </div>
+     <img class="card-img-bottom" src="src/webcam_rover.png" alt="Card image" style="width:100%">
+  </div>
+
+<div class="card bg-danger col-md-3" style="margin:20px;">
+    <div class="card-body text-center">
+      <p class="card-text">Drawing Robot</p>
+    </div>
+     <img class="card-img-bottom" src="src/drawing_robot.png" alt="Card image" style="width:100%";>
+</div>
 </div>
 
-<div class="mt-4 p-5 text-white rounded webcam_rover_div">
-<h3 class="webcam_rover_heading">Webcam controlled Rover</h3>
-<a href="Self_Balancing_Motorcycle.html"><img src="src/webcam_rover.png" class="rounded-cirle webcam_rover_image_outside" alt="Cinque Terre"></a>
-</div>
-</div>
 
-<!-- <div class="tab-pane container fade" id="calendar"> -->
-<!-- <iframe src="src/calendar-07/index.html" width="80%" height="80%" style="border: none;"> -->
-<!-- </iframe> -->
 
 </div>
-
 
 </div> 
+
+<div class="tab-pane container fade Notebooks-div" id="notebooks">
+
+<div class="Nav_bar">
+
+  <div class="nav nav-tabs nav-bar-notebooks">
+    <a class="nav-link active btn text-black" data-bs-toggle="tab" href="#numpy">NUMPY</a>
+    <a class="nav-link btn text-black" data-bs-toggle="tab" href="#pandas">PANDAS</a>
+    
+  </div>
+
+<div class="tab-content notebooks-content">
+
+<div class="tab-pane container active"  id="numpy">
+<div class="mt-4 p-5 bg-success text-white rounded myStyleTest">
+ <h1>NUMPY</h1>
+</div>
+</div>
+
+<div class="tab-pane container"  id="pandas">
+<div class="mt-4 p-5 bg-success text-white rounded myStyleTest">
+ <h1>PANDAS</h1>
+</div>
+</div>
+
+
+ </div>
+
+
+</div>
 
 </div>
 

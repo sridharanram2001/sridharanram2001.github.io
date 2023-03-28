@@ -30,6 +30,12 @@
 {
 	display:inline-block;
 }
+
+.Notebooks
+{
+display:inline-block;	
+}
+
 .Calendar
 {
 display:inline-block;	
@@ -37,7 +43,7 @@ display:inline-block;
 .Linkedin_logo	
 {	
 	display: inline;
-	margin-left:415px ;
+	margin-left:550px ;
 	width:50;
 	height:50;
 }
@@ -93,32 +99,33 @@ display:inline-block;
 
 .Nav_bar
 {
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(230, 230, 230, 0.7);
 }
 
 .Hover-button > .text-black:hover
 {
-background-color: rgba(255, 255, 255, 1.0);
+background-color: rgba(0, 0, 0, 0.9);
 }
 
 .Projects-div
 {
 	background-color: rgba(25, 135, 84,1);
-	width:1920px;
-	margin-left:50px;
+	width:1400px;
+	max-width:100%;
+	margin-left:auto;
 	border-radius: 1rem;
 }
 
-.self_balacing_image_outside
+.self_balancing_image_outside
 {
-	margin-left:350px;
-	width:202.625px;
-	height:165.5px;
+	
+	width:379px;
+	height:324px;
 }
 
 .wwebcam_rover_image_outside
 {
-	margin-left:350px;
+	
 	width:383px;
 	height:318px;
 }
@@ -137,22 +144,64 @@ background-color: rgba(255, 255, 255, 1.0);
 
 .self_balance_heading
 {	
-	
-	margin-left:30px;
+	text-align:center;
 }
 
 .self_balancing_div
 {
-display:inline-block;
-
+	margin-left:10px;
+	margin-right:10px;
+	display:inline-block;
+	
 }
 
 .webcam_rover_heading
 {
-	margin-left:33px;
+
+	text-align:center;	
 }
 
 .webcam_rover_div
+{	
+	margin-left:10px;
+	margin-right:10px;
+	display:inline-block;
+	
+}
+
+.drawing_bot_image_outside
 {
-display: inline-block;
+
+}
+.drawing_bot_heading
+{
+	text-align:center;
+}
+
+.drawing_bot_div
+{
+  margin-left:10px ;	
+  display: inline-block;
+}
+
+.Notebooks-div
+{
+width:100%;
+text-align:left;
+margin-left:0px;
+margin-right:0px;	
+}
+
+.nav-bar-notebooks
+{
+
+}
+
+.nav_bar_top
+{
+
+}
+.notebooks-content
+{
+	
 }
