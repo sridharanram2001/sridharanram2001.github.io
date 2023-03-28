@@ -1,207 +1,172 @@
-.heading
-{
-	color:Green;
-	text-align:center ;
+.heading {
+	color: Green;
+	text-align: center;
 }
 
-.Welcome
-{
-	font-size:50px ;
+.Welcome {
+	font-size: 50px;
 }
 
-.navigation_tab
-{
+.navigation_tab {
 
-	display:inline-block;
+	display: inline-block;
 	margin-left: auto;
 }
-.Resume
-{
-	display:inline-block;
+
+.Resume {
+	display: inline-block;
 }
 
-.Home
-{	
-	display:inline-block;
-	margin-left:30px
+.Home {
+	display: inline-block;
+	margin-left: 30px
 }
 
-.Projects
-{
-	display:inline-block;
+.Projects {
+	display: inline-block;
 }
 
-.Notebooks
-{
-display:inline-block;	
+.Notebooks {
+	display: inline-block;
 }
 
-.Calendar
-{
-display:inline-block;	
+.Calendar {
+	display: inline-block;
 }
-.Linkedin_logo	
-{	
+
+.Linkedin_logo {
 	display: inline;
-	margin-left:550px ;
-	width:50;
-	height:50;
+	margin-left: 550px;
+	width: 50;
+	height: 50;
 }
 
-.Github_logo
-{	
+.Github_logo {
 	display: inline;
-	margin-left:20px ;
-	width:100;
-	height:50;	
+	margin-left: 20px;
+	width: 100;
+	height: 50;
 }
 
-.Youtube_logo
-{	
+.Youtube_logo {
 	display: inline;
-	margin-right:20px ;
-	width:150;	
-	height:100;	
+	margin-right: 20px;
+	width: 150;
+	height: 100;
 }
 
-.background_img
-{
+.background_img {
 
-	background-image:url('src/Robot_img.jpg'),  linear-gradient(rgba(255,255,255,0.75),rgba(0,0,0,0.75));
-    background-blend-mode: overlay;
-
-}
-
-.background_img_projects
-{
-
-	background-image:url('src/Robotic-Automation.jpg'),  linear-gradient(rgba(255,255,255,0.75),rgba(0,0,0,0.75));
-    background-blend-mode: overlay;
+	background-image: url('src/Robot_img.jpg'), linear-gradient(rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.75));
+	background-blend-mode: overlay;
 
 }
 
-.outer_div
-{
+.background_img_projects {
 
-	background-color: rgba(25, 135, 84,0.8);
-	width:1000px;
-	margin-left:250px;
+	background-image: url('src/Robotic-Automation.jpg'), linear-gradient(rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.75));
+	background-blend-mode: overlay;
+
+}
+
+.outer_div {
+
+	background-color: rgba(25, 135, 84, 0.8);
+	width: 1000px;
+	margin-left: 250px;
 	border-radius: 1rem;
 }
 
-.my_image
-{	
+.my_image {
 	margin-left: 350px;
-	width:202.625px;
-	height:165.5px;
-	border-radius:1000px;
+	width: 202.625px;
+	height: 165.5px;
+	border-radius: 1000px;
 }
 
-.Nav_bar
-{
+.Nav_bar {
 	background-color: rgba(230, 230, 230, 0.7);
 }
 
-.Hover-button > .text-black:hover
-{
-background-color: rgba(0, 0, 0, 0.9);
+.Hover-button>.text-black:hover {
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
-.Projects-div
-{
-	background-color: rgba(25, 135, 84,1);
-	width:1400px;
-	max-width:100%;
-	margin-left:auto;
+.Projects-div {
+	background-color: rgba(25, 135, 84, 1);
+	width: 1400px;
+	max-width: 100%;
+	margin-left: auto;
 	border-radius: 1rem;
 }
 
-.self_balancing_image_outside
-{
-	
-	width:379px;
-	height:324px;
+.self_balancing_image_outside {
+
+	width: 379px;
+	height: 324px;
 }
 
-.wwebcam_rover_image_outside
-{
-	
-	width:383px;
-	height:318px;
+.wwebcam_rover_image_outside {
+
+	width: 383px;
+	height: 318px;
 }
 
-.self_balance_background
-{
+.self_balance_background {}
+
+.resume-inside {
+	width: 60%;
+	height: 80%;
+	margin-left: 350px;
+}
+
+.self_balance_heading {
+	text-align: center;
+}
+
+.self_balancing_div {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
 
 }
 
-.resume-inside
-{
-	width:60%;
-	height:80%;
-	margin-left:350px;
+.webcam_rover_heading {
+
+	text-align: center;
 }
 
-.self_balance_heading
-{	
-	text-align:center;
-}
-
-.self_balancing_div
-{
-	margin-left:10px;
-	margin-right:10px;
-	display:inline-block;
-	
-}
-
-.webcam_rover_heading
-{
-
-	text-align:center;	
-}
-
-.webcam_rover_div
-{	
-	margin-left:10px;
-	margin-right:10px;
-	display:inline-block;
-	
-}
-
-.drawing_bot_image_outside
-{
+.webcam_rover_div {
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
 
 }
-.drawing_bot_heading
-{
-	text-align:center;
+
+.drawing_bot_image_outside {}
+
+.drawing_bot_heading {
+	text-align: center;
 }
 
-.drawing_bot_div
-{
-  margin-left:10px ;	
-  display: inline-block;
+.drawing_bot_div {
+	margin-left: 10px;
+	display: inline-block;
 }
 
-.Notebooks-div
-{
-width:100%;
-text-align:left;
-margin-left:0px;
-margin-right:0px;	
+.Notebooks-div {
+	width: 100%;
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
-.nav-bar-notebooks
+.notebook-nav
 {
 
 }
+.nav-bar-notebooks {}
 
-.nav_bar_top
-{
+.nav_bar_top {}
 
-}
-.notebooks-content
-{
-	
-}
+.notebooks-content {}
