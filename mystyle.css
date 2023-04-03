@@ -170,3 +170,8 @@
 .nav_bar_top {}
 
 .notebooks-content {}
+.sidebar-container{
+	display: flex;
+	flex-direction: column;
+	
+}
