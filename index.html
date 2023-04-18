@@ -4,9 +4,11 @@
   <title>
     My website
   </title>
+  <script src="popper.min.js" type="text/javascript"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="command_java.js" type="text/javascript"></script>
+  
   <link href="prism.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="mystyle.css">
@@ -26,12 +28,7 @@
 
       </div>
 
-      <a href="https://www.linkedin.com/in/ramprakash-sridharan/"><img src="src/Linkedin_img.png" alt="Linkedin_logo"
-          class="Linkedin_logo"></a>
-      <a href="https://github.com/sridharanram2001"><img src="src/GitHub-logo.png" alt="Github_logo"
-          class="Github_logo"></a>
-      <a href="https://www.youtube.com/channel/UCqtPdtAcmfsabAUoA8PQxIA"><img src="src/YouTube-Logo.png"
-          alt="Youtube_logo" class="Youtube_logo"></a>
+    
     </div>
 
 
@@ -39,12 +36,21 @@
       <div class="outer_div tab-pane container active" id="home">
         <div class="mt-4 p-5 text-white rounded myStyleTest">
           <img src="src/My_image_cropped.jpg" class="rounded-cirle my_image" alt="Cinque Terre">
+        <div class="logo_div">  
+        <a href="https://www.linkedin.com/in/ramprakash-sridharan/"><img src="src/Linkedin_img.png" alt="Linkedin_logo"
+            class="Linkedin_logo"></a>
+        <a href="https://github.com/sridharanram2001"><img src="src/GitHub-logo.png" alt="Github_logo"
+            class="Github_logo"></a>
+        <a href="https://www.youtube.com/channel/UCqtPdtAcmfsabAUoA8PQxIA"><img src="src/YouTube-Logo.png"
+            alt="Youtube_logo" class="Youtube_logo"></a>
+          </div>
           <h1>About</h1>
           <p> I am aspiring Robotics Engineer aiming at Mastering the field of Robotics and Automation. Deeply inspired
             by the field of Robotics, I did my Bachelors in "Robotics and Automation". </p>
           <h1>This site</h1>
           <p>This site is my personal treasure, this is the place where I store and organize content
-          <p>
+          </p>
+          
         </div>
       </div>
 
@@ -60,7 +66,8 @@
             <div class="card bg-primary col-md-3" style="margin:20px">
               <div class="card-body text-center">
                 <p class="card-text">Self Balancing Motorcycle</p>
-                <img class="card-img-bottom" src="src/self_balancing_motorcycle1.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-bottom" src="src/self_balancing_motorcycle1.jpg" alt="Card image"
+                  style="width:100%">
               </div>
             </div>
 
@@ -92,6 +99,9 @@
           <div class="nav nav-tabs nav-bar-notebooks col-3 sidebar-container">
             <a class="nav-link active btn text-black" style="width:100%" data-bs-toggle="tab" href="#numpy">NUMPY</a>
             <a class="nav-link btn text-black" style="width:100%" data-bs-toggle="tab" href="#pandas">PANDAS</a>
+            <a class="nav-link btn text-black" style="width:100%" data-bs-toggle="tab"
+              href="#visualization">VISUALIZATION</a>
+            <a class="nav-link btn text-black" style="width:100%" data-bs-toggle="tab" href="#Deeplearning">DEEP NEURAL NETWORKS</a>
           </div>
 
           <div class="tab-content notebooks-content col-9">
@@ -99,93 +109,118 @@
             <div class="tab-pane container active" id="numpy">
               <div class="mt-4 p-5 bg-success text-white rounded myStyleTest">
                 <h1>NUMPY</h1>
+                <br>
                 <p> This page consists of some of the most frquently used numpy functions for quick reference</p>
-                <h4> 1. numpy.array()</h4>
+                
+                <h4 class="mt4">1. numpy.array()</h4>
                 <p> Given a python list or any array like object, this function coverts the object to a numpy array</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = [2,3,4,5,6]
 np.array(object=a)</code></pre>
-                <p> Some useful arguments : </p> 
-                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy documentation</a>). </p>
-                <p> > <b><u>copy </u></b> - a boolean, if set True will copy the object  </p>
-                <p>(Note : if you don't use copy and simply assign the array to a variable, then any changes in the variable will change the array)</p>
-
+                <p> Some useful arguments : </p>
+                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a
+                    href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy
+                    documentation</a>). </p>
+                <p> > <b><u>copy </u></b> - a boolean, if set True will copy the object </p>
+                <p>(Note : if you don't use copy and simply assign the array to a variable, then any changes in the
+                  variable will change the array)</p>
+                <br>  
+                
                 <h4> 2. numpy.ndarray.tolist()</h4>
                 <p> Given a numpy array , this function coverts the array to a python list</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.array([2,3,4,5,6])
 b = a.tolist()</code></pre>
-                
+                <br>
+
                 <h4> 3. numpy.zeros()</h4>
                 <p> Given the shape of the array in tuple , this function generates a numpy array made of zeros</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.zeros(shape=(2,3))</code></pre>
-                <p> Some useful arguments : </p> 
-                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy documentation</a>). </p>
-                
-                
+                <p> Some useful arguments : </p>
+                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a
+                    href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy
+                    documentation</a>). </p>
+<br>
+
                 <h4> 4. numpy.ones()</h4>
                 <p> Given the shape of the array in tuple , this function generates a numpy array made of ones</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.ones(shape=(2,3))</code></pre>
-                <p> Some useful arguments : </p> 
-                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy documentation</a>). </p>
-              
-              
+                <p> Some useful arguments : </p>
+                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a
+                    href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy
+                    documentation</a>). </p>
+<br>
+
                 <h4> 5. numpy.linspace()</h4>
-                <p> Given a starting, ending number and number of elements, this function generates a numpy array under the conditons</p>
+                <p> Given a starting, ending number and number of elements, this function generates a numpy array under
+                  the conditons</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.linspace(start=2,stop=10,num=20) #default value for num is 50</code></pre>
-                <p> Some useful arguments : </p> 
-                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy documentation</a>). </p>
+                <p> Some useful arguments : </p>
+                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a
+                    href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy
+                    documentation</a>). </p>
                 <p> > <b><u>endpoint </u></b> - a boolean, if True then stop is last sample, default is True</p>
-
+<br>
                 <h4> 6. numpy.random.rand()</h4>
                 <p> Given the shape of array as arguments, this function generates a numpy array of random values</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.random.rand(d0=2,d1=3)</code></pre>
-
-                  <h4> 7. numpy.random.randn()</h4>
-                  <p> Given the shape of array as arguments, this function generates a array of numbers from a standard normal distribution. It is a normal Gaussian distribution with mean 0 and variance 1.</p>
-                  <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
-a = np.random.randn(d0=2,d1=3)</code></pre>
-
-                  <h4> 8. numpy.random.randint()</h4>
-                  <p> Given a low value, high value and shape , this function generates a array of numbers between the low and high values with the given shape.</p>
-                  <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
-a = np.random.randint(low=2,high=20,size=(5,9))</code></pre>  
-                <p> Some useful arguments : </p> 
-                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy documentation</a>). </p>
-                <p>(Note : high is optional, but it makes more sense to give it a high value)</p>
-
-                <h4> 9. numpy.random.uniform()</h4>
-                <p> Given a low value, high value and shape , this function generates a array of numbers between the low and high values with the given shape from a uniform distribution.</p>
+<br>
+                <h4> 7. numpy.random.randn()</h4>
+                <p> Given the shape of array as arguments, this function generates a array of numbers from a standard
+                  normal distribution. It is a normal Gaussian distribution with mean 0 and variance 1.</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
-a = np.random.randint(low=-1,high=0,size=(5,9))</code></pre>  
+a = np.random.randn(d0=2,d1=3)</code></pre>
+<br>
+                <h4> 8. numpy.random.randint()</h4>
+                <p> Given a low value, high value and shape , this function generates a array of numbers between the low
+                  and high values with the given shape.</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
+a = np.random.randint(low=2,high=20,size=(5,9))</code></pre>
+                <p> Some useful arguments : </p>
+                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a
+                    href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy
+                    documentation</a>). </p>
+                <p>(Note : high is optional, but it makes more sense to give it a high value)</p>
+<br>
+                <h4> 9. numpy.random.uniform()</h4>
+                <p> Given a low value, high value and shape , this function generates a array of numbers between the low
+                  and high values with the given shape from a uniform distribution.</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
+a = np.random.randint(low=-1,high=0,size=(5,9))</code></pre>
                 <p>(Note : high is not included )</p>
-
+<br>
                 <h4>10. numpy.eye()</h4>
-                <p> Given a number or a shape, this function generates a two dimensional array of the given shape that represents an identity matrix.</p>
+                <p> Given a number or a shape, this function generates a two dimensional array of the given shape that
+                  represents an identity matrix.</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.eye(N=5)</code></pre>
-                <p> Some useful arguments : </p> 
+                <p> Some useful arguments : </p>
                 <p> > <b><u>M</u></b> - default is None, can be used to set the number of columns.</p>
-                
+
                 <h4>11. numpy.random.seed()</h4>
-                <p> A random number can be given as argument to the function, which generates a seed. The seed is used to reproduce the same random values</p>
+                <p> A random number can be given as argument to the function, which generates a seed. The seed is used
+                  to reproduce the same random values</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 np.random.seed(seed=50)
 np.random.rand(6)</code></pre>
-
+<br>
                 <h4>12. numpy.arange()</h4>
-                <p>Given start, stop and step, this function generates numbers bewteen start and stop with equal step interval</p>
+                <p>Given start, stop and step, this function generates numbers bewteen start and stop with equal step
+                  interval</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 np.arange(start=10,stop=50,step=10)</code></pre>
-                <p> Some useful arguments : </p> 
-                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy documentation</a>). </p>    
-
+                <p> Some useful arguments : </p>
+                <p> > <b><u>dtype </u></b> - sets a data type to the numpy array (datatypes are listed on <a
+                    href="https://numpy.org/doc/stable/reference/arrays.dtypes.html" target="_blank">numpy
+                    documentation</a>). </p>
+<br>
                 <h4>13. numpy.reshape(),numpy.ndarray.reshape()</h4>
-                <p>Given an array and int or shape in tuple, this funtion resizes the array. Can also be used with an array object </p>
+                <p>Given an array and int or shape in tuple, this funtion resizes the array. Can also be used with an
+                  array object </p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.ones((1,7))
 np.reshape(a,shape=(7,1))
@@ -197,41 +232,41 @@ a.reshape(7,1)</code></pre>
 a = np.zeros((10,5))
 np.shape(a)
 a.shape</code></pre>
-
+<br>
                 <h4>15. numpy.ndarray.max()</h4>
                 <p>Used with an array object to return the largest number in the numpy array</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.array([2,3,4,5,6])
 a.max()</code></pre>
-                <p> Some useful arguments : </p> 
+                <p> Some useful arguments : </p>
                 <p> > <b><u> axis</u></b> - can set a particular axis to find the largest </p>
 
-              
+<br>
                 <h4>16. numpy.ndarray.argmax()</h4>
                 <p>Used with an array object to return the index of the largest number in the numpy array</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.array([2,3,4,5,6])
 a.argmax()</code></pre>
-                <p> Some useful arguments : </p> 
+                <p> Some useful arguments : </p>
                 <p> > <b><u> axis</u></b> - can set a particular axis to find the largest </p>
-
+<br>
                 <h4>17. numpy.ndarray.min()</h4>
                 <p>Used with an array object to return the smallest number in the numpy array</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.array([2,3,4,5,6])
 a.min()</code></pre>
-                <p> Some useful arguments : </p> 
+                <p> Some useful arguments : </p>
                 <p> > <b><u> axis</u></b> - can set a particular axis to find the largest </p>
-
+<br>
                 <h4>18. numpy.ndarray.argmin()</h4>
                 <p>Used with an array object to return the index of the smallest number in the numpy array</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
 a = np.array([2,3,4,5,6])
 a.argmin()</code></pre>
-                <p> Some useful arguments : </p> 
+                <p> Some useful arguments : </p>
                 <p> > <b><u> axis</u></b> - can set a particular axis to find the largest </p>
+<br>
 
-                
               </div>
             </div>
 
@@ -240,16 +275,20 @@ a.argmin()</code></pre>
                 <h1>PANDAS</h1>
                 <p> This page contains some of the most frequently used pandas functions for quick reference </p>
 
-                <h4>1.pandas.Series()</h4>
-                <p>Given an array (can be list,dictionary, np.ndarray etc), this function generates a pandas Series of the array</p>
+                <h4>1. pandas.Series()</h4>
+                <p>Given an array (can be list,dictionary, np.ndarray etc), this function generates a pandas Series of
+                  the array</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
 a = [2,3,5,6,7]
 b = pd.Series(data=a)</code></pre>
                 <p> > <b><u> index</u></b> - pass a list to set index for the elements</p>
 
-                <h4>2.pandas.DataFrame()</h4>
-                <p>Given an array (can be list,dictionary, np.ndarray etc), this function generates a pandas DataFrame of the array</p>
+                <h4>2. pandas.DataFrame()</h4>
+                <p>Given an array (can be list,dictionary, np.ndarray etc), this function generates a pandas DataFrame
+                  of the array</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
 a = [2,3,5,6,7]
 index=["a","b","c","d","e"]
 columns=["A","B","C","D","E"]
@@ -257,20 +296,206 @@ b = pd.DataFrame(data=a,index=index,columns=columns)</code></pre>
                 <p>(Note : index and columns are optional) </p>
 
 
-                <h4>3.pandas.DataFrame.drop()</h4>
+                <h4>3. pandas.DataFrame.drop()</h4>
                 <p>Used with the DataFrame object to drop a row or a column from the Dataframe</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
 a = [2,3,5,6,7]
-b = pd.Series(data=a)</code></pre>
+b = [7,8,9,10,11]
+cols = ['a','b','c','d','e']
+df = pd.DataFrame(data=[a,b],columns=cols)
+df.drop('a') # drops the column 'a'</code></pre>
+                <p> Some useful arguments : </p>
+                <p> > <b><u> axis</u></b> - drops the columns of a DataFrame </p>
+
+                <h4>4. pandas.DataFrame.loc()</h4>
+                <p>Used with the DataFrame object to index a row using the index elements
+                  of the Dataframe.Input can also be an array</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+a = [2,3,5,6,7]
+b = [7,8,9,10,11]
+index=['a','b']
+df= pd.Series(data=a,index=index)
+df.iloc('a')</code></pre>
+
+                <h4>5. pandas.DataFrame.iloc()</h4>
+                <p>Used with the DataFrame object to index a row using integers from the Dataframe.Input can also be an
+                  array</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+a = [2,3,5,6,7]
+b = [7,8,9,10,11]
+index=['a','b']
+df= pd.Series(data=a,index=index)
+df.iloc('a')</code></pre>
+
+                <h4>6. pandas.DataFrame.describe()</h4>
+                <p>Used with the DataFrame object to describes the data in the dataframe. The output is a dataframe with
+                  count,mean,standard deviation,min,max etc
+                  of the data in the dataframe </p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+a = [2,3,5,6,7]
+b = [7,8,9,10,11]
+index=['a','b']
+df= pd.Series(data=a,index=index)
+df.describe()</code></pre>
+
+                <h4>7. pandas.DataFrame.dtypes()</h4>
+                <p>Used with a DataFrame object, outputs a pandas Series of the list of datatypes used in the dataframe
+                </p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+a = [2,3,5,6,7]
+b = [7,8,9,10,11]
+index=['a','b']
+df= pd.Series(data=a,index=index)
+df.dtypes</code></pre>
+
+                <h4>8. pandas.DataFrame.info()</h4>
+                <p>Used with DataFrame object to obtain some information about the dataframe</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+a = [2,3,5,6,7]
+b = [7,8,9,10,11]
+index=['a','b']
+df= pd.Series(data=a,index=index)
+df.info()</code></pre>
+
+                <h4>9. pandas.DataFrame.dropna()</h4>
+                <p>Used with DataFrame object to drop the missing data. Drops entire rows with atleast one missing value
+                </p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+df = pd.DataFrame({'A':[1,2,np.nan,4],'B':[5,np.nan,np.nan,8],'C':[10,20,30,40]})
+df.dropna()</code></pre>
+                <p> Some useful arguments : </p>
+                <p> > <b><u> axis</u></b> - drops the columns of a DataFrame with missing data</p>
+
+                <h4>10. pandas.DataFrame.fillna()</h4>
+                <p>Used with DataFrame object to fill the missing data. Fills the missing data of the entire DataFrame
+                </p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+df = pd.DataFrame({'A':[1,2,np.nan,4],'B':[5,np.nan,np.nan,8],'C':[10,20,30,40]})
+df.fillna(value=0)</code></pre>
+
+                <h4>11. pandas.DataFrame.head()</h4>
+                <p>Used with DataFrame object to show the top rows of the dataframe</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+df = pd.DataFrame({'A':[1,2,3,4],'B':[5,6,7,8],'C':[10,20,30,40]})
+df.head()</code></pre>
+                <p>(Note : The default value for N is 5) </p>
+
+                <h4>12. pandas.DataFrame.tail()</h4>
+                <p>Used with DataFrame object to show the bottom rows of the dataframe</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+df = pd.DataFrame({'A':[1,2,3,4],'B':[5,6,7,8],'C':[10,20,30,40]})
+df.tail()</code></pre>
+                <p>(Note : The default value for N is 5) </p>
+
+                <h4>13. pandas.DataFrame.groupby()</h4>
+                <p>Used with DataFrame object to filter out the dataframe. The group by function , must always
+                  be used with an aggregation function like mean(),count(),sum() etc
+                </p>
+                <p>Refer <a href="https://cmdlinetips.com/2019/10/pandas-groupby-13-functions-to-aggregate">this</a>
+                  website for aggregation functions</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import pandas as pd
+import pandas as pd
+df = pd.DataFrame({'A':[1,2,3,4],'B':[5,6,7,8],'C':[10,20,30,40]})
+df.tail()</code></pre>
+                <p>(Note : The default value for N is 5) </p>
+
+
+
 
 
               </div>
             </div>
 
+            <div class="tab-pane container" id="visualization">
+              <div class="mt-4 p-5 bg-success text-white rounded myStyleTest">
 
+                <h1>VISUALIZATION</h1>
+                <h2>MATPLOTLIB</h2>
+                <p> Some of the basics of matplot lib for reference</p>
+               <div><h3>1. Plotting a simple sine wave using legends, title and other functions</h3><br>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import matplotlib.pyplot as plt
+import numpy as np
+a = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2 * np.pi * t)
+
+fig, ax = plt.subplots()
+ax.plot(t, s, color='r')
+
+ax.set(xlabel='time (s)', ylabel='voltage (mV)',title='Sine wave')
+ax.grid()
+
+fig.savefig("sine_wave.png")
+plt.show()
+</code></pre><br>
+<h3>Output : </h3>
+<img src="src/sine_wave_plot.png" style="display:block;margin-left:auto;margin-right:auto;"></div>
+<br>
+<div>
+<h3> 2. Plotting data using matplotlib interactive plot</h3>
+<p>The interactive plot is very useful when plotting real time data. The following is an example of interactive plot</p>
+<p>A random number is generated and plotted against time. Although this is not real time data this gives an idea how the plot works in real time</p>
+<p> Import the necessary modules </p>
+<pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+import datetime</code></pre>
+<p>Intialize time, pyplot figure, subplot and turn on the interactive mode using plt.ion() </p> 
+<p>Intiazlize arrays to store time and data</p>
+<pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">t0 = datetime.datetime.now()
+fig = plt.figure()
+ax = plt.subplot(111)
+plt.ion()
+data=list()
+time_diff = list()
+</code></pre>
+<p>Use ax.cla() to clear any previous plots, calculate time difference, generate a random number and plot the data </p>
+<p>Note: plt.pause(0.05) is necessary for the interactive plot to run</p>
+<p> Plot for 10 seconds and break out of the loop  
+<pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">while True:
+  ax.cla()
+  t1 = datetime.datetime.now()
+  diff = t1-t0
+  time_diff.append(diff.total_seconds())
+  data.append(np.random.rand())
+  ax.plot(time_diff,data,marker='o')
+  plt.show()
+  plt.pause(0.05)
+  if diff.total_seconds() > 10:
+      break
+</code></pre>
+<h3>Output:</h3>
+<img src="src/interactive_plot.gif" style="display:block;margin-left:auto;margin-right:auto;">
+
+<br>
+<div class="dropdown">
+  <a class="btn text-black dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+
+</div>
+
+
+
+              </div>
+            </div>
+            
           </div>
-
-
+          
         </div>
 
       </div>
