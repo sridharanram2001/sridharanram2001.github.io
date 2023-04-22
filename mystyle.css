@@ -102,6 +102,15 @@ body {
 	border-radius: 8rem;
 }
 
+.card-text
+{
+	display:None;
+}
+.card-body>.card-text:hover
+{
+	display:visible;
+}
+
 .main_nav {
 	background-color: rgba(230, 230, 230, 0.7);
 }
@@ -190,7 +199,7 @@ width:100vw;
 
 .notebooks-content 
 {
-	background-color: rgba(255, 255, 255, 0.7);
+	
 }
 .sidebar-container{
 	display: flex;
