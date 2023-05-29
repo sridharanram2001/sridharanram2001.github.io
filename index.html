@@ -64,11 +64,12 @@
       <div class="tab-pane container fade Projects-div" id="projects">
         <div class="container-fluid">
           <div class="row">
+            
             <div class="card bg-primary col-md-3" style="margin:20px">
               <div class="card-body text-center">
-                <img class="card-img" src="src/self_balancing_motorcycle1.jpg" alt="Card image"
-                  style="width:100%">
-                <p class="card-text card-img-overlay" >Self Balancing Motorcycle</p>
+                <p class="card-text">Self Balancing Motorcycle</p>
+                <a href="Self_Balancing_Motorcycle.html" target="_blank"><img class="card-img-bottom" src="src/self_balancing_motorcycle1.jpg" alt="Card image" style="width:100%"></a>
+                
               </div>
             </div>
 
@@ -85,6 +86,14 @@
                 <img class="card-img-bottom" src="src/drawing_robot.png" alt="Card image" style="width:100%" ;>
               </div>
             </div>
+
+            <div class="card bg-danger col-md-3" style="margin:20px;">
+              <div class="card-body text-center">
+                <p class="card-text">Turtlebot4 - Traffic Sign Classification and Obstacle Avoidance</p>
+                <a href="https://hankramnithish.github.io/" target="_blank"><img class="card-img-bottom" src="src/bot_image.jpg" alt="Card image" style="width:100%" ;></a>
+              </div>
+            </div>
+
           </div>
 
 
@@ -523,7 +532,10 @@ time_diff = list()
                 <img src="src/label_eg.png" style="height:30vh;width:60vw;display:block;margin-right:auto;margin-left:auto;"><br><br>
                 <h2>2. Training the model </h2>
                 <p class="lead">Download the required files for training yolov5 from the github repository.<a href="https://github.com/ultralytics/yolov5">Repo Link</a></p>
-                <p class="lead">To train the model we need to point our dataset to yolov5. To do this you need to create a yaml file under yolov5/data and add the following (you can also edit one of the yaml files under the data folder) </p>
+                <p class="lead">To download the libraries needed for yolov5, a requirements.txt file is included under the downloaded "yolov5" folder which contains the name of the libraries required and their version requirements.</p>
+                <p class="lead">Run the following command in your command terminal while inside the "yolov5" folder to installed the necessary libraries (You can also download the libraries in your own virtual environment)</p>
+                <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-terminal">pip3 install -r requirements.txt</code></pre>
+                <p class="lead">To train the model, we need to point our dataset to yolov5. To do this you need to create a yaml file under "yolov5/data" and add the following (you can also edit one of the yaml files under the data folder) </p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-yaml"># Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
 path: your_path/fullDataset  # dataset root dir
 train: images/train/  # train images (relative to 'path') 118287 images
@@ -533,20 +545,19 @@ val: images/val/  # val images (relative to 'path') 5000 images
 # Classes
 names:
   0: bump
-  1: left_Uturn
-  2: right_Uturn
-  3: speed_10
-  4: speed_20
-  5: speed_30
-  6: stop
-  7: straight
-  8: left_turn
-  9: right_turn
+  1: left_turn
+  2: left_Uturn
+  3: right_turn
+  4: right_Uturn
+  5: speed_10
+  6: speed_20
+  7: speed_30
+  8: stop
+  9: straight
   
-
                 </code></pre><br>
                 <p class="lead">Add your path to the dataset and edit the number of classes as per your requirement.<br><br>Before starting the training let us look at the hyperparameters we will be using.
-                  By default yolo has its own hyperparameters under "data/hyp.scratch.yaml".<br><br>We can also use other hyperpameter files under "data/hyps". We will be using "hyp.scratch-low.yaml", as the name 
+                  By default yolo has its own hyperparameters inside the "yolov5/train.py" file (for older versions, yolo uses "yolov5/data/hyp.scratch.yaml").<br><br>We can also use other hyperpameter files under "data/hyps". We will be using "hyp.scratch-low.yaml", as the name 
                   suggests it does minor modifications (scratches), operations  like flip the image up, flip the image left,mosaic,shear, scale etc on the images we train. We can also set the learning rate,
                   momentum,weight decay etc on the hyperpameter file.
                 </p>
@@ -591,18 +602,49 @@ copy_paste: 0.0  # segment copy-paste (probability)
                 </code></pre>
                 <p class="lead">Note that I have given the probability for "flipud" and "fliplr" as 0.0, this is because flipping the images changes the meaning of the feature. For example , a 
                  right turn image will be trained as a left turn image, this confuses the model and makes the model ambiguous and unable to differentiate between the features. <br><br>Depending on your 
-                 application you are free to chose whatever parameters you want, but be careful not to run into such mistakes. 
+                 application you are free to choose the parameters you want, but be careful not to run into such errors. 
              
                 </p>
-                <p class="lead">Now we are officially read to train our model.<br><br> To train the model we need to run the train.py file under the yolov5 folder, followed by image size, batch size, epochs, the name of yaml file we just created along with the hyperpameter file name as command line arguments .</p>
+                <p class="lead">Now we are officially ready to train our model.<br><br> To train the model we need to run the train.py file under the yolov5 folder, followed by image size, batch size, epochs, the name of yaml file we just created along with the hyperpameter file name as command line arguments .</p>
                 <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-terminal">python train.py --img 320 --batch 16 --epochs 60 --data custom_data.yaml --weights yolov5s.pt --cache --hyp hyp.scratch-low.yaml</code></pre> 
-              <p class="lead"> The model is trained and will be stored as a folder under "runs". The folder will contains the weights, results, metrics such as precison, recall, loss curves etc. There are also some images of training batches, labelled images and model predictions from the validation set.</p>
+              <p class="lead"> The model is trained and the results will be stored as a folder under "yolov5/runs". The folder will contains the weights ("*.pt"), results, metrics such as precison, recall, loss curves etc. There are also some images of training batches, labelled images and model predictions from the validation set.</p>
               <br>
               <h3>Labelled Images</h3><br>
               <img src="src/val_batch0_labels.jpg" style="height:7%;width:90%;display:block;margin-right:auto;margin-left:auto;"><br><br>
               <h3>Predictions</h3><br>
               <img src="src/val_batch0_pred.jpg" style="height:7%;width:90%;display:block;margin-right:auto;margin-left:auto;"><br><br>
-                
+              <h2>3. Deploying the model </h2><br>
+              <p class="lead">The trained weights are in the extension "*.pt". We can use these weights to deploy the model to classify images from live webcam feed</p>
+              <p class="lead">We can use the "detect.py" file under the dowloaded yolov5 folder. Run the python file in the terminal with weights as arguments followed by the source, the source could be webcam,image,a .mp4 video, video links etc. 
+                (You can also refer the "detect.py file to check the list of arguments")
+              </p><br>
+              
+              <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-terminal">python detect.py --weights best.pt --source 0 --view-img</code></pre><br><br>
+              <h3>Live feed output : </h3><br> 
+              <img src="src/yolo_detect_gif.gif" style="display:block;margin-right:auto;margin-left:auto;"><br><br>
+              
+              <h2>4. Using the model in your own program </h2>
+              <p class = "lead">To use the model in your very own custom program,load the weights using torch.hub</p>
+              <p class="lead">(Note : "best.pt" is your trained weights file under "yolov5/runs/exp*/weights/*.pt")</p>
+              <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">import torch
+from PIL import Image
+
+img = Image.open(".//fullDataset//images//train//speed_10_10.jpg")
+model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
+result = model(img)
+result.show()  #shows the predicted image
+</code></pre>
+              <p class = "lead">You can also use other attributes with the "results". </p>
+              <pre data-src="plugins/toolbar/prism-toolbar.js" data-prismjs-copy="Copy"><code class="language-python">result.pandas().xyxy  # Gives the xmin,xmax,ymin and ymax of the bounding box followed by the confidence score,class index and class name
+result.pandas().xywh  # Gives the xcenter,ycenter,width and height of the bounding box followed by the confidence score,class index and class name 
+result.pandas().pred # Outputs the same data as the above pandas dataframe, but with the tensor datatype. (excluding the class name)
+result.names # Outputs a list of class names and indices on which the model is trained on.
+result.n # Outputs the number of detected objects.
+#Refer the documentation for other attributes 
+</code></pre>
+   
+
+
               </div></div>
     
 

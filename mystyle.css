@@ -104,11 +104,11 @@ body {
 
 .card-text
 {
-	display:None;
+	
 }
 .card-body>.card-text:hover
 {
-	display:visible;
+	
 }
 
 .main_nav {
