@@ -142,8 +142,7 @@ body {
 .self_balance_background {}
 
 .resume-inside {
-	width: 60%;
-	height:auto;
+	
 	display:block;
 	margin-right: auto;
 	margin-left:auto;
@@ -202,11 +201,13 @@ body {
 
 .notebooks-content 
 {
-	
+ width:80%;	
 }
 .sidebar-container{
 	display: flex;
 	flex-direction: column;
+	margin-top:23px;
+	width:20%
 	
 }
 
