@@ -121,9 +121,8 @@ body {
 
 .Projects-div {
 	background-color: rgba(25, 135, 84, 1);
-	width: 1400px;
-	max-width: 100%;
 	margin-left: auto;
+	margin-right: auto;
 	border-radius: 1rem;
 }
 
@@ -143,8 +142,11 @@ body {
 
 .resume-inside {
 	width: 60%;
-	height: 80%;
-	margin-left: 350px;
+	height:auto;
+	display:block;
+	margin-right: auto;
+	margin-left:auto;
+	margin:30px;
 }
 
 .self_balance_heading {
@@ -228,3 +230,24 @@ width:100vw;
 .tab-content>.active {
     width: 100vw;
 }
+
+.equations
+{
+font-size:170%;
+}
+
+.card-image:hover
+{
+opacity:0.5;
+}
+
+
+.myStyleTest
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width: 90% !important;		
+}
+
+
