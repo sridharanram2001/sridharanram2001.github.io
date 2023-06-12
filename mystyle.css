@@ -124,6 +124,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 1rem;
+	width:80%;
 }
 
 .self_balancing_image_outside {
@@ -188,12 +189,12 @@ body {
 	text-align: left;
 	margin-left: 0px;
 	margin-right: 0px;
-    max-width: 83vw;
+    max-width: 100%;
 }
 
 .notebook-nav
 {
-width:100vw;
+
 }
 .nav-bar-notebooks {}
 
@@ -228,7 +229,7 @@ width:100vw;
 
 }	
 .tab-content>.active {
-    width: 100vw;
+   
 }
 
 .equations
