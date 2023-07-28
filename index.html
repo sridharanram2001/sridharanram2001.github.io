@@ -8,6 +8,7 @@
   <script src="popper.min.js" type="text/javascript"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2c3e460e2b.js" crossorigin="anonymous"></script>
   <script src="command_java.js" type="text/javascript"></script>
   
   <link href="prism.css" rel="stylesheet" />
@@ -25,8 +26,7 @@
         <a class="nav-link btn text-black Resume" data-bs-toggle="tab" href="#resume">RESUME</a>
         <a class="nav-link btn text-black Projects" data-bs-toggle="tab" href="#projects">PROJECTS</a>
         <a class="nav-link btn text-black Notebooks" data-bs-toggle="tab" href="#notebooks">NOTEBOOKS</a>
-        <button type="button" class="btn text-black">MILESTONES</button>
-
+        <a class="nav-link btn text-black Milestones" data-bs-toggle="tab" href="#milestones">MILESTONES</a>
       </div>
 
     
@@ -45,21 +45,127 @@
         <a href="https://www.youtube.com/channel/UCqtPdtAcmfsabAUoA8PQxIA"><img src="src/YouTube-Logo.png"
             alt="Youtube_logo" class="Youtube_logo"></a>
           </div>
-          <h1>About</h1>
+          <h2 class="display-4 underline-text mb-3">About</h2>
           <p> I am aspiring Robotics Engineer aiming at Mastering the field of Robotics and Automation. 
             My objective is to continue working and learning about this field to bring forth many new Robotic technologies. 
-            </p>
-          <h1>This site</h1>
+            </p><br>
+          <h2 class="display-4 underline-text mb-3">This site</h2>
           <p>This site is my personal treasure, this is the place where I store and organize content
-          </p>
+          </p><br>
+          <h2 class="display-4 underline-text mb-3">Education</h2>
+          <div class="row">
+          <div class="card bg-light col-sm-5 m-4" style="border-width:5px;">
+            <img class="card-img-top" src="src/PSG_College_of_Technology_logo.png" alt="Card image" style="margin-top:10px;width:38%;height:auto;display:block;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h3 class="card-title text-dark text-center">Bachelor's Degree</h3>
+              <p class="card-text text-dark" style="font-size:1.2rem">B.E. Robotics and Automation</p>
+              <p class="card-text text-dark" style="font-size:1.2rem">P.S.G. College of Technology</p>
+              <p class="card-text text-dark" style="font-size:1.2rem"><i class="fas fa-location-dot me-2"></i>Avinashi Rd, Peelamedu, Coimbatore,<br>Tamil Nadu 641004, India</p>
+            </div>
+          </div>
+          <div class="card bg-light col-sm-5 m-4" style="border-width:5px;">
+            <img class="card-img-top" src="src/arizona-state-university-logo-vertical.png" alt="Card image" style="margin-top:10px;width:60%;height:auto;display:block;margin-left:auto;margin-right:auto;">
+            <div class="card-body">
+              <h3 class="card-title text-dark text-center">Master's Degree</h3>
+              <p class="card-text text-dark" style="font-size:1.2rem">M.S. Robotics and Autonomous Systems, Systems Engineer</p>
+              <p class="card-text text-dark" style="font-size:1.2rem">Arizona State University
+              <p class="card-text text-dark" style="font-size:1.2rem"><i class="fas fa-location-dot me-2"></i>7001 E Williams Field Rd, Mesa, AZ 85212, USA</p>
+            </div>
+          </div>
+          </div><br>
           
+          <h2 class="display-4 underline-text mb-3">Skills</h2>
+          <ul class="list-group">
+
+            <li class="list-group-item skill-group">
+              <button class="btn dropdown-toggle m-3 skill-button" data-bs-toggle="collapse" data-bs-target="#general">GENERAL</button>
+              <div id="general" class="collapse skill-div">
+                <span class="badge rounded-pill bg-primary m-2">ROS/ROS2</span>
+                <span class="badge rounded-pill bg-primary m-2">Robot Programming</span>
+                <span class="badge rounded-pill bg-primary m-2">Machine learning</span>
+                <span class="badge rounded-pill bg-primary m-2">Deep learning</span> 
+                <span class="badge rounded-pill bg-primary m-2">Perception</span>
+                <span class="badge rounded-pill bg-primary m-2">Computer Vision</span>
+                <span class="badge rounded-pill bg-primary m-2">Machine Vision</span>
+                <span class="badge rounded-pill bg-primary m-2">Robot Vision</span>
+                <span class="badge rounded-pill bg-primary m-2">Computer Aided Design</span>
+                <span class="badge rounded-pill bg-primary m-2">Cicruit and PCB Design</span>
+                <span class="badge rounded-pill bg-primary m-2">3D printing</span>
+              </div>
+              
+            </li>
+
+            <li class="list-group-item skill-group">
+              <button class="btn dropdown-toggle m-3 skill-button" data-bs-toggle="collapse" data-bs-target="#program">PROGRAMMING</button>
+              <div id="program" class="collapse skill-div">
+                <span class="badge rounded-pill bg-primary m-2">C</span>
+                <span class="badge rounded-pill bg-primary m-2">C++</span>
+                <span class="badge rounded-pill bg-primary m-2">Python</span>
+                <span class="badge rounded-pill bg-primary m-2">Javascript</span>
+                <span class="badge rounded-pill bg-primary m-2"></span>
+              </div>
+              </li>
+
+              <li class="list-group-item skill-group">
+                <button class="btn dropdown-toggle m-3 skill-button" data-bs-toggle="collapse" data-bs-target="#frame">FRAMEWORK AND LIBRARIES</button>
+                <div id="frame" class="collapse skill-div">
+                  <span class="badge rounded-pill bg-primary m-2">Numpy</span>
+                  <span class="badge rounded-pill bg-primary m-2">Pandas</span>
+                  <span class="badge rounded-pill bg-primary m-2">Seaborn</span>
+                  <span class="badge rounded-pill bg-primary m-2">Matplotlib</span>
+                  <span class="badge rounded-pill bg-primary m-2">Tensorflow</span>
+                  <span class="badge rounded-pill bg-primary m-2">Keras</span>
+                  <span class="badge rounded-pill bg-primary m-2">Scikit learn</span>
+                  <span class="badge rounded-pill bg-primary m-2">Pyqt5</span>
+                  <span class="badge rounded-pill bg-primary m-2">Kivy</span>
+                  <span class="badge rounded-pill bg-primary m-2">Gazebo (ROS/ROS2)</span>
+
+                </div>
+                </li>
+            <li class="list-group-item skill-group">
+              <button class="btn dropdown-toggle m-3 skill-button" data-bs-toggle="collapse" data-bs-target="#demo">HARDWARE</button>
+              <div id="demo" class="collapse skill-div">
+                <span class="badge rounded-pill bg-primary m-2">Raspberry Pi 3, 4, PICO</span>
+                <span class="badge rounded-pill bg-primary m-2">Arduino UNO, Mega, Nano </span>
+                <span class="badge rounded-pill bg-primary m-2">ESP32</span>
+                <span class="badge rounded-pill bg-primary m-2">SIEMANS S7-1200 PLC</span>
+                <span class="badge rounded-pill bg-primary m-2">Nucleo and Discovery (Arm Cortex M4)</span>
+              </div>
+            </li>
+
+            <li class="list-group-item skill-group">
+              <button class="btn dropdown-toggle m-3 skill-button" data-bs-toggle="collapse" data-bs-target="#CAD">CAD Designing</button>
+              <div id="CAD" class="collapse skill-div">
+                <span class="badge rounded-pill bg-primary m-2">Autodesk Fusion 360</span>
+                <span class="badge rounded-pill bg-primary m-2">Solid works </span>
+                <span class="badge rounded-pill bg-primary m-2">Autodesk 123D </span>
+              </div>
+            </li>
+
+            <li class="list-group-item skill-group">
+              <button class="btn dropdown-toggle m-3 skill-button" data-bs-toggle="collapse" data-bs-target="#Circuit">Circuit and PCB Designing</button>
+              <div id="Circuit" class="collapse skill-div">
+                <span class="badge rounded-pill bg-primary m-2">Proteus</span>
+                <span class="badge rounded-pill bg-primary m-2">Easy EDA </span>
+                <span class="badge rounded-pill bg-primary m-2">Altium </span>
+              </div>
+            </li>
+
+
+     
+              
+          </ul>
+          
+        <!--<svg role="img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><title>Arduino</title><path d="M23.82 12a5.78 5.78 0 0 0-5.88-5.67c-.29 0-.6.02-.9.05-2.52.37-4.2 2.18-5.13 3.57-.95-1.39-2.64-3.2-5.14-3.57-.3-.03-.6-.05-.9-.05A5.78 5.78 0 0 0 0 12a5.78 5.78 0 0 0 5.87 5.67c.3 0 .6-.02.92-.06 2.52-.36 4.2-2.17 5.14-3.56.95 1.39 2.63 3.2 5.14 3.57.31.03.6.05.91.05A5.78 5.78 0 0 0 23.82 12zM6.48 15.6c-.2.04-.43.04-.63.04A3.77 3.77 0 0 1 2 11.98a3.78 3.78 0 0 1 3.86-3.66c.2 0 .42.02.63.04 2.37.35 3.82 2.67 4.31 3.62-.5.95-1.95 3.3-4.31 3.62zM13 12c.49-.93 1.94-3.27 4.31-3.62.2-.04.42-.04.62-.04A3.76 3.76 0 0 1 21.8 12a3.78 3.78 0 0 1-3.86 3.66c-.2 0-.42-.02-.62-.04-2.36-.35-3.82-2.69-4.31-3.62zm-8.79.59h3.54v-1.16H4.22v1.16zm14.13 0h1.19v-1.16h-1.2v-1.19H17.2v1.2H16v1.15h1.2v1.18h1.15V12.6zM24 7.06c0 .3-.22.51-.53.51a.51.51 0 0 1-.53-.5c0-.28.24-.52.53-.52.31 0 .53.22.53.51zm-.91 0c0 .22.16.4.4.4.22 0 .38-.18.38-.4s-.16-.4-.38-.4c-.24-.02-.4.16-.4.4zm.3.26h-.1V6.8l.2-.01c.09 0 .14.01.18.03.04.02.06.06.06.11 0 .06-.04.1-.11.11.05.02.07.06.09.13l.03.13h-.12c-.02-.02-.02-.07-.04-.13-.02-.05-.04-.07-.11-.07h-.05l-.02.22zm.02-.3h.06c.07 0 .1-.01.1-.07 0-.05-.03-.07-.1-.07h-.07v.14h.01z"/></svg>
+        -->
         </div>
-      </div>
+        </div>
+      
 
 
       <div class="tab-pane container fade " id="resume">
         <div class="resume-inside">
-        <object data="src/Resume_asu_updated.pdf" type="application/pdf" width="100%" height="100%">
+        <object data="src/Resume_TORC_data_science.pdf" type="application/pdf" width="100%" height="100%">
         </object>
       </div>
       </div>
@@ -121,8 +227,36 @@
       </div>
 
       <div class="tab-pane container fade Notebooks-div container-fluid" id="notebooks">
-
-        <div class="Nav_bar notebook-nav row">
+        <br>
+        <a class="btn btn-success offcanvas_button" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i class="fas fa-ellipsis-v fa-lg" style="font-size:2.5em;margin-top:17.5px;"></i>
+        </a>
+        <div class="offcanvas offcanvas-start bg-success" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title" id="offcanvasExampleLabel" style="margin-left:15%;">NOTEBOOKS</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <div class="Nav_bar notebook-nav row">
+  
+                  <div class="nav nav-tabs nav-bar-notebooks col-3 sidebar-container">
+                    <a class="nav-link active btn text-black" style="width:100%" data-bs-toggle="tab" href="#numpy">NUMPY</a>
+                    <a class="nav-link btn text-black" style="width:100%" data-bs-toggle="tab" href="#pandas">PANDAS</a>
+                    <a class="nav-link btn text-black" style="width:100%" data-bs-toggle="tab"
+                      href="#visualization">VISUALIZATION</a>  
+                    <a class="btn text-black dropdown-toggle" type="button" style="width:100%" data-bs-toggle="collapse" href="#collapsebar" aria-expanded="false">DEEP NEURAL NETWORKS</a>
+                    <div id="collapsebar" class="nav collapse">
+                    <a class="nav-link btn text-black ANN" style="width:100%" data-bs-toggle="tab" href="#ANN">ANN</a>
+                    <a class="nav-link btn text-black CNN" style="width:100%" data-bs-toggle="tab" href="#CNN">CNN</a>
+                    <a class="nav-link btn text-black RNN" style="width:100%" data-bs-toggle="tab" href="#RNN">RNN</a>
+                    </div>
+                    <a class="nav-link btn text-black yolo" style="width:100%" data-bs-toggle="tab" href="#yolo">YOLOv5</a>
+                  </div>
+          </div>
+        </div>
+        </div>
+  
+        <!--<div class="Nav_bar notebook-nav row">
 
           <div class="nav nav-tabs nav-bar-notebooks col-3 sidebar-container">
             <a class="nav-link active btn text-black" style="width:100%" data-bs-toggle="tab" href="#numpy">NUMPY</a>
@@ -136,12 +270,12 @@
             <a class="nav-link btn text-black RNN" style="width:100%" data-bs-toggle="tab" href="#RNN">RNN</a>
             </div>
             <a class="nav-link btn text-black yolo" style="width:100%" data-bs-toggle="tab" href="#yolo">YOLOv5</a>
-          </div>
+          </div>-->
 
-          <div class="tab-content notebooks-content col-9">
+          <div class="tab-content notebooks-content col-12">
 
             <div class="tab-pane container active" id="numpy">
-              <div class="mt-4 p-5 bg-success text-white rounded myStyleTest">
+              <div class="mt-4 p-5 bg-success text-white rounded Notebooks-div">
                 <h1>NUMPY</h1>
                 <br>
                 <p> This page consists of some of the most frquently used numpy functions for quick reference</p>
@@ -305,7 +439,7 @@ a.argmin()</code></pre>
             </div>
 
             <div class="tab-pane container" id="pandas">
-              <div class="mt-4 p-5 bg-success text-white rounded myStyleTest">
+              <div class="mt-4 p-5 bg-success text-white rounded Notebooks-div">
                 <h1>PANDAS</h1>
                 <p> This page contains some of the most frequently used pandas functions for quick reference </p>
 
@@ -451,7 +585,7 @@ df.tail()</code></pre>
             </div>
 
             <div class="tab-pane container" id="visualization">
-              <div class="mt-4 p-5 bg-success text-white rounded myStyleTest">
+              <div class="mt-4 p-5 bg-success text-white rounded Notebooks-div">
 
                 <h1>VISUALIZATION</h1>
                 <h2>MATPLOTLIB</h2>
@@ -525,7 +659,7 @@ time_diff = list()
 
                 
             <div class="tab-pane container" id="yolo">
-                <div class="mt-4 p-5 bg-success text-white rounded myStyleTest">
+                <div class="mt-4 p-5 bg-success text-white rounded Notebooks-div">
                 <h1>YOLOv5</h1><br>
                 <p class="lead"> YOLO is a popular object detection and classification algorithm. It is very fast and efficient in detecting and classifying objects<p>
                 <p class="lead"> This sections shows the implementation of YOLO in pytorch. YOLO is developed using pytorch and hence it is easier to implement the algorithm in pytorch rather than tensorflow and keras</p>
@@ -672,6 +806,130 @@ result.n # Outputs the number of detected objects.
           
         </div>
 
+        <div class="tab-pane container fade " id="milestones">
+          <section class="bg-success">
+            <div class="container py-5">
+              <div class="main-timeline-2">
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                      <img src="src/bot_image.jpg" class="card-img-top"
+                        alt="Responsive image">
+                      <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Semi Autonomous Driving using road signs and Collision Avoidance - Project</h4>
+                        <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2023</p>
+                        <p class="text-muted mb-4"><i class="fas fa-light fa-location-dot" aria-hidden="true"></i> Arizona State University, Mesa, Arizona, United States</p>
+                        <p class="mb-0">The objective of this project is to develop a semi-autonomous vehicle which can detect different road signals and avoid dynamic obstacles (collision avoidance). 
+                            </p>
+                      </div>
+
+                    </div>
+                  </div>
+                <div class="timeline-2 right-2">
+                  <div class="card">
+                    <img src="src/parkinson's_img_1.jpg" class="card-img-top"
+                      alt="Responsive image">
+                    <div class="card-body p-4">
+                      <h4 class="fw-bold mb-4">A Real-Time Biofeedback Device for Individuals with Neuro Vocal Intensity Disorder - Project</h4>
+                      <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2023</p>
+                      <p class="text-muted mb-4"><i class="fas fa-light fa-location-dot" aria-hidden="true"></i> Barrow Neurological Institute, Phoenix, Arizona, United States</p>
+                      <p class="mb-0">A Biofeedback is developed for patients with parkinsons suffering from lack of vocal intesity awareness.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-2 left-2">
+                  <div class="card">
+                    <img src="src/Blank 3 Grids Collage.png" class="card-img-top"
+                      alt="Responsive image">
+                    <div class="card-body p-4">
+                      <h4 class="fw-bold mb-4">Arduino Engineering Kit - Self Balancing Motorcycle, Webcam Controlled Mobile Rover, Drawing Robot.-Project </h4>
+                      <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2022</p>
+                      <p class="text-muted mb-4"><i class="fas fa-light fa-location-dot" aria-hidden="true"></i> Arizona State University, Mesa, Arizona, United States</p>
+                      <p class="mb-0">Programmed using Matlab and Simulink, an academic project for Robotic Systems - I </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-2 right-2">
+                  <div class="card">
+                    <img src="src/Motor_pos_control.jpg" class="card-img-top"
+                      alt="Responsive image">
+                    <div class="card-body p-4">
+                      <h4 class="fw-bold mb-4"> Position Control of a DC Motor with MATLAB using a Raspberry pi</h4>
+                      <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2022</p>
+                      <p class="text-muted mb-4"><i class="fas fa-light fa-location-dot" aria-hidden="true"></i> Arizona State University, Mesa, Arizona, United States</p>
+                      <p class="mb-0">The objective is to develop a closed loop control system for a motor using encoder feedback and control the position of the motor. Academic project for Mechatronics Systems.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                      <img src="src/asu_collage.png" class="card-img-top m-1"
+                        alt="Responsive image">
+                      <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">Started my journey as an ASU student</h4>
+                        <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2022</p>
+                        <p class="text-muted mb-4"><i class="fas fa-light fa-location-dot" aria-hidden="true"></i> Arizona State University, Mesa, Arizona, United States</p>
+                        <p class="mb-0"> M.S. Robotics and Autonomous Sytems, Systems Engineer</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                <div class="timeline-2 right-2">
+                  <div class="card">
+                    <img src="src/journal_pub.png" class="card-img-top m-1"
+                      alt="Responsive image">
+                    <div class="card-body p-4">
+                      <h4 class="fw-bold mb-4">My first publication</h4>
+                      <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2022</p>
+                      <p class="mb-0">
+                        Anomalous Human Activity Detection Using Stick Figure and Deep Learning Model - A Deep learning model is developed which takes the stick figure of a human as input and outputs a pose which is either Normal or Anomalous.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                      <img src="src/lapp-kabel-logo.png" class="card-img-top" alt="Responsive image" >
+                      <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">LAPP kabel - Intern</h4>
+                        <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2022</p>
+                        <p class="text-muted mb-4"><i class="fas fa-light fa-location-dot" aria-hidden="true"></i> LAPP India Pvt Ltd, Bangalore, Karnataka, India</p>
+                        <p class="mb-0"> The objective is to develop a mobile robot that traverses overhead cable trays and finds faults in cables using a thermal camera. Worked as a software enginner, developed an appication in python and programmed the Raspberry pi.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="timeline-2 right-2">
+                    <div class="card">
+                      <img src="src/CNC engraving 3D.png" class="card-img-top" alt="Responsive image">
+                      <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">CNC Sketching Machine - Project</h4>
+                        <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2021</p>
+                        <p class="text-muted mb-4"><i class="fas fa-light fa-location-dot" aria-hidden="true"></i>PSG College of Technology, Coimbatore, Tamil Nadu, India</p>
+                        <p class="mb-0">Develop a Sketching machine that takes in an image, convert the image to G codes and actuate the motors to draw the image. </p>
+                      </div>
+                    </div>
+                  </div>
+  
+                <div class="timeline-2 left-2">
+                    <div class="card">
+                      <img src="src/my_first_step_cropped.jpg" class="card-img-top" alt="Responsive image" style="width:auto;height:10%">
+                      <div class="card-body p-4">
+                        <h4 class="fw-bold mb-4">My first step</h4>
+                        <p class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> 2018</p>
+                        <p class="text-muted mb-4"><i class="fas fa-light fa-location-dot" aria-hidden="true"></i> PSG College of Technology, Coimbatore, Tamil Nadu, India</p>
+                        <p class="mb-0">Joined my undergrad as a "Robotics and Automation" student and made my first robot using the LEGO kit.</p>
+                      </div>
+                    </div>
+                  </div>
+  
+              </div>
+            </div>
+          </section>
+
+        </div>
       </div>
 
 </body>
