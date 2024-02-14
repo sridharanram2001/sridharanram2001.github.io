@@ -13,3 +13,9 @@ function Projects()
 
 }
 
+const image = document.getElementsByClassName("img-zoon");
+
+
+
+
+
